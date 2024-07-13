@@ -6,10 +6,10 @@ username.forEach(function (usr) {
     if (usr == "admin") {
         console.log("Hello admin, would you like to see a status report?");
     }
-    else if (usr == null) {
-        console.log("We need to find some users!");
-    }
     else {
         console.log("Hello ".concat(usr, ", thank you for logging in again."));
     }
 });
+if (username.length == 0) {
+    console.log("We need to find some users!");
+}
